@@ -514,6 +514,7 @@ namespace Services
             return hierarchy;
         }
 
+        ///Get Full Hierarchy by storeId & modelId regardless of whom access at what level
         public async Task<List<FullHierarchyNode>> GetFullHierarchy(string storeId, string modelId)
         {
             var fgaClient = GetFgaClientObj(storeId, modelId);
