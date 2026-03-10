@@ -1,5 +1,6 @@
 # OpenFGA In .Net
 Implements **authorization and hierarchical access control using OpenFGA in a .NET application**. It models relationships like **country → state → city → store outlet** and propagates permissions across the hierarchy. Includes helpers to define the authorization model, manage relationships, and check user permissions via the OpenFGA API.
+Just like Google Drive’s folder and file access management, granting write access to a parent folder automatically provides access to all child folders.
 
 # OpenFGA Hierarchical Authorization System (.NET)
 
