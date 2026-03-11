@@ -89,6 +89,14 @@ namespace Services
             return store.Id;
         }
 
+        /// <summary>
+        /// Deletes an existing store from OpenFGA.
+        /// </summary>
+        /// <param name="storeId">The unique identifier of the store to delete.</param>
+        /// <returns>
+        /// A task that represents the asynchronous delete operation. 
+        /// The task result is <c>true</c> if the store was successfully deleted.
+        /// </returns>
         public async Task<bool> DeleteStoreAsync(string storeId)
         {
             var fgaClient = GetFgaClientObj(storeId);
