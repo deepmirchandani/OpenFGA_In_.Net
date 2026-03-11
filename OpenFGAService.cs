@@ -11,6 +11,11 @@ using OpenFga.Sdk.Model;
 
 namespace Services
 {
+    /// <summary>
+    /// Provides helper methods to interact with the OpenFGA API.
+    /// Includes store management, authorization model creation,
+    /// relationship writing, and permission checks.
+    /// </summary>
     public class OpenFGAService : IOpenFGAService
     {
         public string AuthorizationModelId { get; private set; }
